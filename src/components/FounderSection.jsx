@@ -28,9 +28,41 @@ function LinkedinIcon({ size = 16, className = '' }) {
 }
 
 export default function FounderSection({ onOpenContact }) {
-  const [activeFounder, setActiveFounder] = useState('akshda');
+  const [activeFounder, setActiveFounder] = useState('gaurav');
 
   const founders = {
+    gaurav: {
+      name: 'Gaurav Trehan',
+      initials: 'GT',
+      role: 'Co-Founder & Head of Cybersecurity & Technology Programs',
+      location: 'Springfield, MA (Open to Relocation)',
+      email: 'gaurav@trehans.us',
+      phone: '+14133888789',
+      phoneDisplay: '(413) 388-8789',
+      linkedin: 'mailto:gaurav@trehans.us',
+      degree: 'B.S. in Computer Science (Cybersecurity Focus)',
+      school: 'Cybersecurity & Computer Science',
+      title: 'Directing enterprise cybersecurity, compliance & mission-critical delivery',
+      leadBio: 'Program Manager and technology leader with 10+ years of experience directing cybersecurity initiatives, stakeholder roadmaps, and compliance governance across Fortune 500 & premier institutions.',
+      bodyBio: 'Proven track record leading enterprise cybersecurity at Columbia Bank, EY, Boston Globe Media, and IBM. Specialist in ISO 27001 programs, NIST incident response frameworks, DLP for 500k+ global users, GDPR/CCPA alignment, and executive risk governance.',
+      certifications: [
+        'ISO 27001 Lead Auditor',
+        'CISM (Certified Information Security Manager 2025)',
+        'CISSP (In Progress)',
+        'PMP (Project Management Professional - In Progress)'
+      ],
+      coreTools: [
+        'ISO 27001 Program Delivery',
+        'NIST Framework Alignment',
+        'Global DLP (500K+ Users)',
+        'GDPR & CCPA Compliance',
+        'Agile Delivery & Roadmapping',
+        'Stakeholder & Budget Leadership',
+        'Zero-Trust Architecture',
+        'Executive Governance & Reporting'
+      ],
+      ctaText: 'Schedule Consultation with Gaurav'
+    },
     akshda: {
       name: 'Akshda Shandilya',
       initials: 'AS',
@@ -63,38 +95,6 @@ export default function FounderSection({ onOpenContact }) {
         'Financial Planning (FP&A)'
       ],
       ctaText: 'Schedule Consultation with Akshda'
-    },
-    gaurav: {
-      name: 'Gaurav Trehan',
-      initials: 'GT',
-      role: 'Co-Founder & Head of Cybersecurity & Technology Programs',
-      location: 'Springfield, MA (Open to Relocation)',
-      email: 'gaurav@trehans.us',
-      phone: '+14133888789',
-      phoneDisplay: '(413) 388-8789',
-      linkedin: 'mailto:gaurav@trehans.us',
-      degree: 'B.S. in Computer Science (Cybersecurity Focus)',
-      school: 'Cybersecurity & Computer Science',
-      title: 'Directing enterprise cybersecurity, compliance & mission-critical delivery',
-      leadBio: 'Program Manager and technology leader with 10+ years of experience directing cybersecurity initiatives, stakeholder roadmaps, and compliance governance across Fortune 500 & premier institutions.',
-      bodyBio: 'Proven track record leading enterprise cybersecurity at Columbia Bank, EY, Boston Globe Media, and IBM. Specialist in ISO 27001 programs, NIST incident response frameworks, DLP for 500k+ global users, GDPR/CCPA alignment, and executive risk governance.',
-      certifications: [
-        'ISO 27001 Lead Auditor',
-        'CISM (Certified Information Security Manager 2025)',
-        'CISSP (In Progress)',
-        'PMP (Project Management Professional - In Progress)'
-      ],
-      coreTools: [
-        'ISO 27001 Program Delivery',
-        'NIST Framework Alignment',
-        'Global DLP (500K+ Users)',
-        'GDPR & CCPA Compliance',
-        'Agile Delivery & Roadmapping',
-        'Stakeholder & Budget Leadership',
-        'Zero-Trust Architecture',
-        'Executive Governance & Reporting'
-      ],
-      ctaText: 'Schedule Consultation with Gaurav'
     }
   };
 
@@ -112,17 +112,6 @@ export default function FounderSection({ onOpenContact }) {
         {/* Founder Switcher Tabs */}
         <div className="founder-tab-switcher">
           <button
-            className={`founder-tab-btn ${activeFounder === 'akshda' ? 'active' : ''}`}
-            onClick={() => setActiveFounder('akshda')}
-          >
-            <div className="tab-avatar-mini">AS</div>
-            <div className="tab-info-text">
-              <span className="tab-name">Akshda Shandilya</span>
-              <span className="tab-role">Founder • Data & AI Architecture</span>
-            </div>
-          </button>
-
-          <button
             className={`founder-tab-btn ${activeFounder === 'gaurav' ? 'active' : ''}`}
             onClick={() => setActiveFounder('gaurav')}
           >
@@ -130,6 +119,17 @@ export default function FounderSection({ onOpenContact }) {
             <div className="tab-info-text">
               <span className="tab-name">Gaurav Trehan</span>
               <span className="tab-role">Co-Founder • Cybersecurity & Programs</span>
+            </div>
+          </button>
+
+          <button
+            className={`founder-tab-btn ${activeFounder === 'akshda' ? 'active' : ''}`}
+            onClick={() => setActiveFounder('akshda')}
+          >
+            <div className="tab-avatar-mini">AS</div>
+            <div className="tab-info-text">
+              <span className="tab-name">Akshda Shandilya</span>
+              <span className="tab-role">Founder • Data & AI Architecture</span>
             </div>
           </button>
         </div>

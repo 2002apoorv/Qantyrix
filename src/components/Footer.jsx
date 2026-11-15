@@ -45,7 +45,7 @@ export default function Footer({ onOpenContact }) {
               Ready to turn raw data into strategic intelligence?
             </h3>
             <p className="footer-banner-sub">
-              Book a direct scoping session with Akshda Shandilya, Gaurav Trehan, and our engineering leads.
+              Book a direct scoping session with Gaurav Trehan, Akshda Shandilya, and our engineering leads.
             </p>
           </div>
           <div className="footer-banner-right">
@@ -120,18 +120,6 @@ export default function Footer({ onOpenContact }) {
             <h4 className="footer-col-title">Direct Leadership Contact</h4>
             <div className="footer-contact-items">
               <div className="footer-founder-contact-card">
-                <span className="contact-founder-label">Data & AI Architecture:</span>
-                <a href="mailto:akshdashandilya@gmail.com" className="f-contact-link">
-                  <Mail size={14} className="text-blue" />
-                  <span>akshdashandilya@gmail.com</span>
-                </a>
-                <a href="tel:+19733702024" className="f-contact-link">
-                  <Phone size={14} className="text-blue" />
-                  <span>+1 (973) 370-2024</span>
-                </a>
-              </div>
-
-              <div className="footer-founder-contact-card">
                 <span className="contact-founder-label">Cybersecurity & Programs:</span>
                 <a href="mailto:gaurav@trehans.us" className="f-contact-link">
                   <Mail size={14} className="text-blue" />
@@ -143,9 +131,21 @@ export default function Footer({ onOpenContact }) {
                 </a>
               </div>
 
+              <div className="footer-founder-contact-card">
+                <span className="contact-founder-label">Data & AI Architecture:</span>
+                <a href="mailto:akshdashandilya@gmail.com" className="f-contact-link">
+                  <Mail size={14} className="text-blue" />
+                  <span>akshdashandilya@gmail.com</span>
+                </a>
+                <a href="tel:+19733702024" className="f-contact-link">
+                  <Phone size={14} className="text-blue" />
+                  <span>+1 (973) 370-2024</span>
+                </a>
+              </div>
+
               <div className="f-contact-link">
                 <MapPin size={14} className="text-blue" />
-                <span>NYC Metropolitan Area & Springfield, MA</span>
+                <span>Springfield, MA & NYC Metropolitan Area</span>
               </div>
             </div>
 

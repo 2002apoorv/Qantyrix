@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { 
-  ArrowRight, 
-  Sparkles, 
-  TrendingUp, 
-  Database, 
-  BrainCircuit, 
-  ShieldCheck, 
-  Activity, 
-  CheckCircle2, 
-  Layers, 
+import {
+  ArrowRight,
+  Sparkles,
+  TrendingUp,
+  Database,
+  BrainCircuit,
+  ShieldCheck,
+  Activity,
+  CheckCircle2,
+  Layers,
   ChevronRight,
   Server
 } from 'lucide-react';
@@ -41,16 +41,16 @@ export default function Hero({ onOpenContact }) {
 
         {/* Hero Subtitle */}
         <p className="hero-subtitle">
-          Transforming complex data ecosystems into decisive competitive advantage. 
-          Specialized in <strong>Data Analysis</strong>, <strong>Data Engineering</strong>, 
+          Transforming complex data ecosystems into decisive competitive advantage.
+          Specialized in <strong>Data Analysis</strong>, <strong>Data Engineering</strong>,
           <strong> AI/ML Engineering</strong>, and <strong>Enterprise Cybersecurity</strong>.
         </p>
 
         {/* CTA Button Group */}
         <div className="hero-cta-group">
           <div className="hero-btn-wrapper">
-            <button 
-              className="btn-hero-primary" 
+            <button
+              className="btn-hero-primary"
               onClick={onOpenContact}
               id="hero-start-project-btn"
             >
@@ -59,7 +59,7 @@ export default function Hero({ onOpenContact }) {
             </button>
             <div className="btn-glow-aura"></div>
           </div>
-          
+
           <a href="#services" className="btn-hero-secondary">
             <span>Explore Services</span>
             <ChevronRight size={16} />
@@ -152,13 +152,13 @@ export default function Hero({ onOpenContact }) {
                 </div>
               </div>
               <div className="bi-tab-toggle">
-                <button 
+                <button
                   className={`bi-tab ${activeMetricTab === 'weekly' ? 'active' : ''}`}
                   onClick={() => setActiveMetricTab('weekly')}
                 >
                   Weekly
                 </button>
-                <button 
+                <button
                   className={`bi-tab ${activeMetricTab === 'monthly' ? 'active' : ''}`}
                   onClick={() => setActiveMetricTab('monthly')}
                 >
@@ -194,27 +194,27 @@ export default function Hero({ onOpenContact }) {
                     <stop offset="100%" stopColor="#1d68bd" stopOpacity="0.0" />
                   </linearGradient>
                 </defs>
-                <path 
-                  d="M0,90 Q50,75 100,50 T200,45 T300,20 T400,10 L400,120 L0,120 Z" 
-                  fill="url(#chartGradient)" 
+                <path
+                  d="M0,90 Q50,75 100,50 T200,45 T300,20 T400,10 L400,120 L0,120 Z"
+                  fill="url(#chartGradient)"
                 />
-                <path 
-                  d="M0,90 Q50,75 100,50 T200,45 T300,20 T400,10" 
-                  fill="none" 
-                  stroke="#1d68bd" 
+                <path
+                  d="M0,90 Q50,75 100,50 T200,45 T300,20 T400,10"
+                  fill="none"
+                  stroke="#1d68bd"
                   strokeWidth="3.5"
-                  strokeLinecap="round" 
+                  strokeLinecap="round"
                 />
                 <circle cx="300" cy="20" r="5" fill="#1d68bd" stroke="#ffffff" strokeWidth="2" />
                 <circle cx="400" cy="10" r="5" fill="#1d68bd" stroke="#ffffff" strokeWidth="2" />
               </svg>
             </div>
-            
+
             <div className="bi-card-footer">
               <span className="status-live-indicator">
                 <span className="ping-dot"></span> Real-time data pipeline active
               </span>
-              <span className="author-tag">Google Cloud & Data Science Verified</span>
+              <span className="author-tag">Data & Cybersecurity Verified</span>
             </div>
           </div>
 

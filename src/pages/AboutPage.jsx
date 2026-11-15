@@ -80,7 +80,7 @@ export default function AboutPage({ onOpenContact }) {
                 Too often, organizations struggle with data initiatives that stall out in experimental notebooks or suffer from crashing pipelines, bloated cloud warehouse bills, and security compliance vulnerabilities.
               </p>
               <p className="story-body-p">
-                Qantyrix Tech LLC was established to solve this exact problem. Led by co-founders Akshda Shandilya (Lead Data Architect & AI Engineer) and Gaurav Trehan (Head of Cybersecurity Programs & ISO 27001 Lead Auditor), our consultancy combines rigorous analytical methodology with enterprise cybersecurity standards. We turn convoluted data landscapes across Snowflake, Databricks, BigQuery, and AWS into high-velocity, cyber-hardened engines for growth.
+                Qantyrix Tech LLC was established to solve this exact problem. Led by co-founders Gaurav Trehan (Head of Cybersecurity Programs & ISO 27001 Lead Auditor) and Akshda Shandilya (Lead Data Architect & AI Engineer), our consultancy combines rigorous analytical methodology with enterprise cybersecurity standards. We turn convoluted data landscapes across Snowflake, Databricks, BigQuery, and AWS into high-velocity, cyber-hardened engines for growth.
               </p>
             </div>
           </div>
@@ -124,9 +124,9 @@ export default function AboutPage({ onOpenContact }) {
           <div className="about-founder-teaser-card">
             <div className="founder-teaser-left">
               <span className="teaser-pill">Principal Leadership</span>
-              <h3 className="founder-teaser-name">Meet Co-Founders Akshda Shandilya & Gaurav Trehan</h3>
+              <h3 className="founder-teaser-name">Meet Co-Founders Gaurav Trehan & Akshda Shandilya</h3>
               <p className="founder-teaser-desc">
-                Akshda (Master’s in Business Analytics & Data Science, Google Cloud certified) directs high-concurrency data architectures and AI models. Gaurav (10+ years leading enterprise cybersecurity at Columbia Bank, EY, Boston Globe, and IBM; ISO 27001 Lead Auditor) directs risk, compliance, and large-scale program delivery.
+                Gaurav (10+ years leading enterprise cybersecurity at Columbia Bank, EY, Boston Globe, and IBM; ISO 27001 Lead Auditor) directs risk, compliance, and large-scale program delivery. Akshda (Master’s in Business Analytics & Data Science, Google Cloud certified) directs high-concurrency data architectures and AI models.
               </p>
               <Link to="/founder" className="btn-read-founder">
                 <span>View Full Leadership Profiles & Credentials</span>
@@ -138,7 +138,7 @@ export default function AboutPage({ onOpenContact }) {
                 <p className="founder-quote-text">
                   “Data intelligence and cybersecurity are two sides of the same coin. At Qantyrix Tech LLC, we build platforms so fast, scalable, and hardened that leadership never has to choose between innovation and security.”
                 </p>
-                <span className="quote-author">— Akshda Shandilya & Gaurav Trehan, Co-Founders</span>
+                <span className="quote-author">— Gaurav Trehan & Akshda Shandilya, Co-Founders</span>
               </div>
             </div>
           </div>

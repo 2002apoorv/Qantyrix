@@ -31,9 +31,89 @@ function LinkedinIcon({ size = 16, className = '' }) {
 }
 
 export default function FounderPage({ onOpenContact }) {
-  const [selectedFounder, setSelectedFounder] = useState('all'); // 'all', 'akshda', 'gaurav'
+  const [selectedFounder, setSelectedFounder] = useState('all'); // 'all', 'gaurav', 'akshda'
 
   const foundersData = {
+    gaurav: {
+      id: 'gaurav',
+      name: 'Gaurav Trehan',
+      initials: 'GT',
+      role: 'Co-Founder & Head of Cybersecurity & Technology Programs',
+      tagline: 'Cybersecurity Program Leader & ISO 27001 Lead Auditor',
+      location: 'Springfield, MA (Open to Relocation)',
+      email: 'gaurav@trehans.us',
+      phone: '+14133888789',
+      phoneDisplay: '(413) 388-8789',
+      linkedin: 'mailto:gaurav@trehans.us',
+      summary: 'Program Manager with 10+ years of experience leading cybersecurity and technology initiatives. Expert in program delivery, stakeholder management, and compliance (ISO 27001, GDPR, CCPA). Proven ability to drive strategy, manage cross-functional teams, and deliver results at scale.',
+      detailedBio: [
+        'Gaurav has directed enterprise cybersecurity strategies and mission-critical technology rollouts for premier banking institutions, top-tier global consultancies, and national media organizations.',
+        'At Columbia Bank, he spearheaded the enterprise ISO 27001 certification program and cybersecurity roadmap while establishing rigorous executive governance and multi-million-dollar budget oversight.',
+        'At Ernst & Young (EY), he directed large-scale client delivery strategies and Agile program increments. At IBM, he architected global Data Loss Prevention (DLP) programs protecting 500,000+ users worldwide and aligned incident response with the NIST framework.'
+      ],
+      certifications: [
+        { title: 'ISO 27001 Lead Auditor', issuer: 'ISO / IEC' },
+        { title: 'CISM - Certified Information Security Manager (2025)', issuer: 'ISACA' },
+        { title: 'CISSP - Certified Information Systems Security Professional', issuer: '(ISC)² (In Progress)' },
+        { title: 'PMP - Project Management Professional', issuer: 'PMI (In Progress)' }
+      ],
+      education: [
+        {
+          degree: 'Bachelor of Science (B.S.) in Computer Science',
+          institution: 'Cybersecurity Focus',
+          period: 'Undergraduate Degree',
+          location: 'United States'
+        }
+      ],
+      experience: [
+        {
+          role: 'Information Security Program Manager',
+          company: 'Columbia Bank',
+          period: '2024 – 2025',
+          location: 'United States',
+          desc: 'Led the enterprise ISO 27001 certification program and cybersecurity roadmap. Managed multiple security programs, cross-functional engineering teams, and executive reporting.'
+        },
+        {
+          role: 'Sr. Manager, Cybersecurity Consulting',
+          company: 'EY (Ernst & Young)',
+          period: '2022 – 2023',
+          location: 'United States',
+          desc: 'Directed client cybersecurity programs and delivery strategy. Led Agile program increments, improved delivery processes, and drove executive stakeholder alignment.'
+        },
+        {
+          role: 'Head of Cybersecurity Program',
+          company: 'Boston Globe Media',
+          period: '2021 – 2022',
+          location: 'Boston, MA',
+          desc: 'Owned enterprise cybersecurity strategy and execution across digital and corporate assets. Managed cross-functional initiatives, vendor audits, and governance programs.'
+        },
+        {
+          role: 'Cybersecurity Architect / Program Lead',
+          company: 'IBM',
+          period: '2019 – 2021',
+          location: 'United States',
+          desc: 'Led global Data Loss Prevention (DLP) programs protecting 500K+ enterprise users. Implemented incident response protocols aligned to NIST and reported security KPIs to executive leadership.'
+        }
+      ],
+      technicalGroups: [
+        {
+          category: 'Cybersecurity & Governance',
+          items: ['ISO 27001 ISMS', 'NIST Cybersecurity Framework', 'SOC2 Type II Readiness', 'Zero-Trust Architecture', 'Penetration Testing Review']
+        },
+        {
+          category: 'Data Privacy & Regulatory Compliance',
+          items: ['GDPR Compliance', 'CCPA Compliance', 'Data Governance', 'Third-Party Risk Management', 'Audit Trail Architecture']
+        },
+        {
+          category: 'Enterprise Protection & DLP',
+          items: ['Global DLP (500K+ Users)', 'Incident Response Automation', 'Vulnerability Mitigation', 'IAM / Least-Privilege RBAC', 'Cloud Security Posture']
+        },
+        {
+          category: 'Program & Delivery Management',
+          items: ['Agile Program Increments', 'Roadmapping & Milestone Planning', 'Budgeting & Cost Allocation', 'Cross-Functional Team Leadership', 'Executive KPI Reporting']
+        }
+      ]
+    },
     akshda: {
       id: 'akshda',
       name: 'Akshda Shandilya',
@@ -126,91 +206,11 @@ export default function FounderPage({ onOpenContact }) {
           items: ['Tableau', 'Power BI', 'AWS QuickSight', 'FP&A Financial Modeling', 'Variance Analysis', 'Executive Dashboards']
         }
       ]
-    },
-    gaurav: {
-      id: 'gaurav',
-      name: 'Gaurav Trehan',
-      initials: 'GT',
-      role: 'Co-Founder & Head of Cybersecurity & Technology Programs',
-      tagline: 'Cybersecurity Program Leader & ISO 27001 Lead Auditor',
-      location: 'Springfield, MA (Open to Relocation)',
-      email: 'gaurav@trehans.us',
-      phone: '+14133888789',
-      phoneDisplay: '(413) 388-8789',
-      linkedin: 'mailto:gaurav@trehans.us',
-      summary: 'Program Manager with 10+ years of experience leading cybersecurity and technology initiatives. Expert in program delivery, stakeholder management, and compliance (ISO 27001, GDPR, CCPA). Proven ability to drive strategy, manage cross-functional teams, and deliver results at scale.',
-      detailedBio: [
-        'Gaurav has directed enterprise cybersecurity strategies and mission-critical technology rollouts for premier banking institutions, top-tier global consultancies, and national media organizations.',
-        'At Columbia Bank, he spearheaded the enterprise ISO 27001 certification program and cybersecurity roadmap while establishing rigorous executive governance and multi-million-dollar budget oversight.',
-        'At Ernst & Young (EY), he directed large-scale client delivery strategies and Agile program increments. At IBM, he architected global Data Loss Prevention (DLP) programs protecting 500,000+ users worldwide and aligned incident response with the NIST framework.'
-      ],
-      certifications: [
-        { title: 'ISO 27001 Lead Auditor', issuer: 'ISO / IEC' },
-        { title: 'CISM - Certified Information Security Manager (2025)', issuer: 'ISACA' },
-        { title: 'CISSP - Certified Information Systems Security Professional', issuer: '(ISC)² (In Progress)' },
-        { title: 'PMP - Project Management Professional', issuer: 'PMI (In Progress)' }
-      ],
-      education: [
-        {
-          degree: 'Bachelor of Science (B.S.) in Computer Science',
-          institution: 'Cybersecurity Focus',
-          period: 'Undergraduate Degree',
-          location: 'United States'
-        }
-      ],
-      experience: [
-        {
-          role: 'Information Security Program Manager',
-          company: 'Columbia Bank',
-          period: '2024 – 2025',
-          location: 'United States',
-          desc: 'Led the enterprise ISO 27001 certification program and cybersecurity roadmap. Managed multiple security programs, cross-functional engineering teams, and executive reporting.'
-        },
-        {
-          role: 'Sr. Manager, Cybersecurity Consulting',
-          company: 'EY (Ernst & Young)',
-          period: '2022 – 2023',
-          location: 'United States',
-          desc: 'Directed client cybersecurity programs and delivery strategy. Led Agile program increments, improved delivery processes, and drove executive stakeholder alignment.'
-        },
-        {
-          role: 'Head of Cybersecurity Program',
-          company: 'Boston Globe Media',
-          period: '2021 – 2022',
-          location: 'Boston, MA',
-          desc: 'Owned enterprise cybersecurity strategy and execution across digital and corporate assets. Managed cross-functional initiatives, vendor audits, and governance programs.'
-        },
-        {
-          role: 'Cybersecurity Architect / Program Lead',
-          company: 'IBM',
-          period: '2019 – 2021',
-          location: 'United States',
-          desc: 'Led global Data Loss Prevention (DLP) programs protecting 500K+ enterprise users. Implemented incident response protocols aligned to NIST and reported security KPIs to executive leadership.'
-        }
-      ],
-      technicalGroups: [
-        {
-          category: 'Cybersecurity & Governance',
-          items: ['ISO 27001 ISMS', 'NIST Cybersecurity Framework', 'SOC2 Type II Readiness', 'Zero-Trust Architecture', 'Penetration Testing Review']
-        },
-        {
-          category: 'Data Privacy & Regulatory Compliance',
-          items: ['GDPR Compliance', 'CCPA Compliance', 'Data Governance', 'Third-Party Risk Management', 'Audit Trail Architecture']
-        },
-        {
-          category: 'Enterprise Protection & DLP',
-          items: ['Global DLP (500K+ Users)', 'Incident Response Automation', 'Vulnerability Mitigation', 'IAM / Least-Privilege RBAC', 'Cloud Security Posture']
-        },
-        {
-          category: 'Program & Delivery Management',
-          items: ['Agile Program Increments', 'Roadmapping & Milestone Planning', 'Budgeting & Cost Allocation', 'Cross-Functional Team Leadership', 'Executive KPI Reporting']
-        }
-      ]
     }
   };
 
-  const akshda = foundersData.akshda;
   const gaurav = foundersData.gaurav;
+  const akshda = foundersData.akshda;
 
   return (
     <div className="page-wrapper founder-page-view">
@@ -223,12 +223,12 @@ export default function FounderPage({ onOpenContact }) {
           </div>
           <h1 className="page-hero-title">
             Executive leadership bridging <br />
-            <span className="hero-serif-italic">data intelligence & enterprise cybersecurity</span>
+            <span className="hero-serif-italic">enterprise cybersecurity & data intelligence</span>
           </h1>
           <p className="page-hero-subtitle">
-            Meet Akshda Shandilya and Gaurav Trehan — the driving minds behind Qantyrix Tech LLC. 
-            Combining 15+ years of senior expertise across high-concurrency cloud data engineering, 
-            Agentic AI, and Fortune 500 cybersecurity governance.
+            Meet Gaurav Trehan and Akshda Shandilya — the driving minds behind Qantyrix Tech LLC. 
+            Combining 15+ years of senior leadership across Fortune 500 cybersecurity governance, 
+            high-concurrency cloud data engineering, and Agentic AI.
           </p>
 
           {/* Filter Bar */}
@@ -240,16 +240,16 @@ export default function FounderPage({ onOpenContact }) {
               Both Co-Founders
             </button>
             <button 
-              className={`founder-pill-selector ${selectedFounder === 'akshda' ? 'active' : ''}`}
-              onClick={() => setSelectedFounder('akshda')}
-            >
-              Akshda Shandilya (Data & AI)
-            </button>
-            <button 
               className={`founder-pill-selector ${selectedFounder === 'gaurav' ? 'active' : ''}`}
               onClick={() => setSelectedFounder('gaurav')}
             >
               Gaurav Trehan (Cybersecurity & Programs)
+            </button>
+            <button 
+              className={`founder-pill-selector ${selectedFounder === 'akshda' ? 'active' : ''}`}
+              onClick={() => setSelectedFounder('akshda')}
+            >
+              Akshda Shandilya (Data & AI)
             </button>
           </div>
         </div>
@@ -260,7 +260,172 @@ export default function FounderPage({ onOpenContact }) {
         <div className="founder-deep-container">
 
           {/* ========================================================
-              FOUNDER 1: AKSHDA SHANDILYA
+              FOUNDER 1: GAURAV TREHAN
+              ======================================================== */}
+          {(selectedFounder === 'all' || selectedFounder === 'gaurav') && (
+            <div className="founder-individual-block" id="gaurav-section">
+              <div className="founder-spotlight-hero">
+                <div className="spotlight-left-profile">
+                  <div className="avatar-huge-wrap">
+                    <span className="avatar-huge-initials">{gaurav.initials}</span>
+                    <span className="avatar-verified-badge" title="Verified Cybersecurity Leader">
+                      <ShieldCheck size={24} className="text-blue" />
+                    </span>
+                  </div>
+
+                  <h2 className="profile-name">{gaurav.name}</h2>
+                  <p className="profile-tagline">{gaurav.role}</p>
+                  
+                  <div className="profile-location-chip">
+                    <MapPin size={14} className="text-blue" />
+                    <span>{gaurav.location}</span>
+                  </div>
+
+                  {/* Contact Actions */}
+                  <div className="profile-quick-actions">
+                    <a href={`mailto:${gaurav.email}`} className="btn-profile-reach">
+                      <Mail size={16} />
+                      <span>{gaurav.email}</span>
+                    </a>
+                    <a href={`tel:${gaurav.phone}`} className="btn-profile-reach secondary">
+                      <Phone size={16} />
+                      <span>{gaurav.phoneDisplay}</span>
+                    </a>
+                    <a 
+                      href={`mailto:${gaurav.email}?subject=Executive%20Consultation%20with%20Gaurav%20Trehan`}
+                      className="btn-profile-reach linkedin"
+                    >
+                      <ShieldCheck size={16} />
+                      <span>ISO 27001 Lead Auditor</span>
+                      <ExternalLink size={12} />
+                    </a>
+                  </div>
+
+                  {/* Firm highlights */}
+                  <div className="profile-firms-row">
+                    <span className="firm-tag">Columbia Bank</span>
+                    <span className="firm-tag">EY</span>
+                    <span className="firm-tag">Boston Globe</span>
+                    <span className="firm-tag">IBM</span>
+                  </div>
+                </div>
+
+                <div className="spotlight-right-summary">
+                  <div className="spotlight-kicker">Cybersecurity, Compliance & Program Leadership</div>
+                  <h3 className="summary-title">10+ Years Directing Enterprise Cybersecurity, Risk & Roadmaps</h3>
+                  {gaurav.detailedBio.map((p, idx) => (
+                    <p key={idx} className="summary-p">{p}</p>
+                  ))}
+
+                  <div className="summary-action-row">
+                    <button className="btn-founder-book-session" onClick={onOpenContact}>
+                      <Calendar size={18} />
+                      <span>Schedule Consultation with Gaurav</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Gaurav Certifications */}
+              <div className="founder-section-block">
+                <div className="section-pill-tag">
+                  <span className="pill-dot"></span>
+                  <span>Gaurav’s Accreditations</span>
+                </div>
+                <h3 className="block-title">Verified Cybersecurity & Project Management Credentials</h3>
+
+                <div className="certs-full-grid">
+                  {gaurav.certifications.map((cert, idx) => (
+                    <div key={idx} className="cert-card-box">
+                      <div className="cert-icon-wrap">
+                        <Award size={22} className="text-blue" />
+                      </div>
+                      <div>
+                        <h4 className="cert-box-title">{cert.title}</h4>
+                        <span className="cert-box-issuer">Credentialing Body: {cert.issuer}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Gaurav Experience & Education Grid */}
+              <div className="experience-education-grid">
+                <div className="timeline-column">
+                  <div className="section-pill-tag">
+                    <span className="pill-dot"></span>
+                    <span>10+ Years Track Record</span>
+                  </div>
+                  <h3 className="block-title">Enterprise Experience</h3>
+
+                  <div className="timeline-track">
+                    {gaurav.experience.map((exp, idx) => (
+                      <div key={idx} className="timeline-item">
+                        <div className="timeline-marker"></div>
+                        <div className="timeline-content">
+                          <span className="timeline-period">{exp.period}</span>
+                          <h4 className="timeline-role">{exp.role}</h4>
+                          <h5 className="timeline-company">{exp.company} • {exp.location}</h5>
+                          <p className="timeline-desc">{exp.desc}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="education-column">
+                  <div className="section-pill-tag">
+                    <span className="pill-dot"></span>
+                    <span>Academic Foundation</span>
+                  </div>
+                  <h3 className="block-title">Education & Degrees</h3>
+
+                  <div className="education-stack">
+                    {gaurav.education.map((edu, idx) => (
+                      <div key={idx} className="education-card">
+                        <div className="edu-icon-circle">
+                          <GraduationCap size={20} className="text-blue" />
+                        </div>
+                        <div>
+                          <h4 className="edu-degree">{edu.degree}</h4>
+                          <h5 className="edu-school">{edu.institution}</h5>
+                          <div className="edu-meta-line">
+                            <span>{edu.period}</span>
+                            <span>•</span>
+                            <span>{edu.location}</span>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Core Frameworks */}
+                  <div className="tech-arsenal-box">
+                    <h4 className="arsenal-title">
+                      <ShieldCheck size={18} className="text-blue" />
+                      <span>Security & Governance Frameworks</span>
+                    </h4>
+                    {gaurav.technicalGroups.map((group, gIdx) => (
+                      <div key={gIdx} className="arsenal-group">
+                        <span className="group-name">{group.category}</span>
+                        <div className="tech-chips-row">
+                          {group.items.map((item, iIdx) => (
+                            <span key={iIdx} className="tech-tag-chip">{item}</span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Divider if both shown */}
+          {selectedFounder === 'all' && <div className="founders-page-divider"></div>}
+
+          {/* ========================================================
+              FOUNDER 2: AKSHDA SHANDILYA
               ======================================================== */}
           {(selectedFounder === 'all' || selectedFounder === 'akshda') && (
             <div className="founder-individual-block" id="akshda-section">
@@ -423,177 +588,12 @@ export default function FounderPage({ onOpenContact }) {
             </div>
           )}
 
-          {/* Divider if both shown */}
-          {selectedFounder === 'all' && <div className="founders-page-divider"></div>}
-
-          {/* ========================================================
-              FOUNDER 2: GAURAV TREHAN
-              ======================================================== */}
-          {(selectedFounder === 'all' || selectedFounder === 'gaurav') && (
-            <div className="founder-individual-block" id="gaurav-section">
-              <div className="founder-spotlight-hero">
-                <div className="spotlight-left-profile">
-                  <div className="avatar-huge-wrap">
-                    <span className="avatar-huge-initials">{gaurav.initials}</span>
-                    <span className="avatar-verified-badge" title="Verified Cybersecurity Leader">
-                      <ShieldCheck size={24} className="text-blue" />
-                    </span>
-                  </div>
-
-                  <h2 className="profile-name">{gaurav.name}</h2>
-                  <p className="profile-tagline">{gaurav.role}</p>
-                  
-                  <div className="profile-location-chip">
-                    <MapPin size={14} className="text-blue" />
-                    <span>{gaurav.location}</span>
-                  </div>
-
-                  {/* Contact Actions */}
-                  <div className="profile-quick-actions">
-                    <a href={`mailto:${gaurav.email}`} className="btn-profile-reach">
-                      <Mail size={16} />
-                      <span>{gaurav.email}</span>
-                    </a>
-                    <a href={`tel:${gaurav.phone}`} className="btn-profile-reach secondary">
-                      <Phone size={16} />
-                      <span>{gaurav.phoneDisplay}</span>
-                    </a>
-                    <a 
-                      href={`mailto:${gaurav.email}?subject=Executive%20Consultation%20with%20Gaurav%20Trehan`}
-                      className="btn-profile-reach linkedin"
-                    >
-                      <ShieldCheck size={16} />
-                      <span>ISO 27001 Lead Auditor</span>
-                      <ExternalLink size={12} />
-                    </a>
-                  </div>
-
-                  {/* Firm highlights */}
-                  <div className="profile-firms-row">
-                    <span className="firm-tag">Columbia Bank</span>
-                    <span className="firm-tag">EY</span>
-                    <span className="firm-tag">Boston Globe</span>
-                    <span className="firm-tag">IBM</span>
-                  </div>
-                </div>
-
-                <div className="spotlight-right-summary">
-                  <div className="spotlight-kicker">Cybersecurity, Compliance & Program Leadership</div>
-                  <h3 className="summary-title">10+ Years Directing Enterprise Cybersecurity, Risk & Roadmaps</h3>
-                  {gaurav.detailedBio.map((p, idx) => (
-                    <p key={idx} className="summary-p">{p}</p>
-                  ))}
-
-                  <div className="summary-action-row">
-                    <button className="btn-founder-book-session" onClick={onOpenContact}>
-                      <Calendar size={18} />
-                      <span>Schedule Consultation with Gaurav</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Gaurav Certifications */}
-              <div className="founder-section-block">
-                <div className="section-pill-tag">
-                  <span className="pill-dot"></span>
-                  <span>Gaurav’s Accreditations</span>
-                </div>
-                <h3 className="block-title">Verified Cybersecurity & Project Management Credentials</h3>
-
-                <div className="certs-full-grid">
-                  {gaurav.certifications.map((cert, idx) => (
-                    <div key={idx} className="cert-card-box">
-                      <div className="cert-icon-wrap">
-                        <Award size={22} className="text-blue" />
-                      </div>
-                      <div>
-                        <h4 className="cert-box-title">{cert.title}</h4>
-                        <span className="cert-box-issuer">Credentialing Body: {cert.issuer}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Gaurav Experience & Education Grid */}
-              <div className="experience-education-grid">
-                <div className="timeline-column">
-                  <div className="section-pill-tag">
-                    <span className="pill-dot"></span>
-                    <span>10+ Years Track Record</span>
-                  </div>
-                  <h3 className="block-title">Enterprise Experience</h3>
-
-                  <div className="timeline-track">
-                    {gaurav.experience.map((exp, idx) => (
-                      <div key={idx} className="timeline-item">
-                        <div className="timeline-marker"></div>
-                        <div className="timeline-content">
-                          <span className="timeline-period">{exp.period}</span>
-                          <h4 className="timeline-role">{exp.role}</h4>
-                          <h5 className="timeline-company">{exp.company} • {exp.location}</h5>
-                          <p className="timeline-desc">{exp.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="education-column">
-                  <div className="section-pill-tag">
-                    <span className="pill-dot"></span>
-                    <span>Academic Foundation</span>
-                  </div>
-                  <h3 className="block-title">Education & Degrees</h3>
-
-                  <div className="education-stack">
-                    {gaurav.education.map((edu, idx) => (
-                      <div key={idx} className="education-card">
-                        <div className="edu-icon-circle">
-                          <GraduationCap size={20} className="text-blue" />
-                        </div>
-                        <div>
-                          <h4 className="edu-degree">{edu.degree}</h4>
-                          <h5 className="edu-school">{edu.institution}</h5>
-                          <div className="edu-meta-line">
-                            <span>{edu.period}</span>
-                            <span>•</span>
-                            <span>{edu.location}</span>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Core Frameworks */}
-                  <div className="tech-arsenal-box">
-                    <h4 className="arsenal-title">
-                      <ShieldCheck size={18} className="text-blue" />
-                      <span>Security & Governance Frameworks</span>
-                    </h4>
-                    {gaurav.technicalGroups.map((group, gIdx) => (
-                      <div key={gIdx} className="arsenal-group">
-                        <span className="group-name">{group.category}</span>
-                        <div className="tech-chips-row">
-                          {group.items.map((item, iIdx) => (
-                            <span key={iIdx} className="tech-tag-chip">{item}</span>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
           {/* CTA Banner */}
           <div className="page-cta-banner">
             <div className="cta-banner-content">
-              <h3 className="cta-banner-title">Work directly with Akshda Shandilya & Gaurav Trehan</h3>
+              <h3 className="cta-banner-title">Work directly with Gaurav Trehan & Akshda Shandilya</h3>
               <p className="cta-banner-desc">
-                From high-concurrency cloud data engineering and AI models to enterprise ISO 27001 cybersecurity audits, let’s architect your solution.
+                From enterprise ISO 27001 cybersecurity audits and risk governance to high-concurrency cloud data engineering and AI models, let’s architect your solution.
               </p>
             </div>
             <button className="btn-banner-action" onClick={onOpenContact}>

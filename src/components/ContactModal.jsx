@@ -57,7 +57,7 @@ export default function ContactModal({ isOpen, onClose }) {
             </div>
             <h3 className="success-title">Strategy Request Received!</h3>
             <p className="success-desc">
-              Thank you, <strong>{formData.fullName}</strong>. Akshda Shandilya, Gaurav Trehan, and our lead engineering team will review your requirements for <strong>{formData.service}</strong> and get back to you within 2-4 business hours.
+              Thank you, <strong>{formData.fullName}</strong>. Gaurav Trehan, Akshda Shandilya, and our lead engineering team will review your requirements for <strong>{formData.service}</strong> and get back to you within 2-4 business hours.
             </p>
             <div className="success-details-box">
               <div className="detail-line">
@@ -66,7 +66,7 @@ export default function ContactModal({ isOpen, onClose }) {
               </div>
               <div className="detail-line">
                 <span>Direct emergency lines:</span>
-                <strong>(973) 370-2024 / (413) 388-8789</strong>
+                <strong>(413) 388-8789 / (973) 370-2024</strong>
               </div>
             </div>
             <button 
@@ -88,7 +88,7 @@ export default function ContactModal({ isOpen, onClose }) {
               </div>
               <h2 className="modal-title">Start Your Project or Schedule a Consultation</h2>
               <p className="modal-sub">
-                Connect directly with <strong>Akshda Shandilya</strong> & <strong>Gaurav Trehan</strong>. We typically respond within 2–4 hours.
+                Connect directly with <strong>Gaurav Trehan</strong> & <strong>Akshda Shandilya</strong>. We typically respond within 2–4 hours.
               </p>
             </div>
 
