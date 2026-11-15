@@ -13,7 +13,7 @@ export default function OrangeBanner({ onOpenContact }) {
           </div>
           <h2 className="banner-headline">
             We’re proudly serving modern enterprises with world-class engineering. 
-            We provide seasoned resources, Google-certified architects, and top data talent.
+            We combine Google-certified data architects, Agentic AI, and ISO 27001 cybersecurity leadership.
           </h2>
         </div>
         <div className="banner-action">

@@ -45,7 +45,7 @@ export default function Footer({ onOpenContact }) {
               Ready to turn raw data into strategic intelligence?
             </h3>
             <p className="footer-banner-sub">
-              Book a direct scoping session with Akshda Shandilya and our engineering leads.
+              Book a direct scoping session with Akshda Shandilya, Gaurav Trehan, and our engineering leads.
             </p>
           </div>
           <div className="footer-banner-right">
@@ -71,15 +71,18 @@ export default function Footer({ onOpenContact }) {
             </Link>
 
             <p className="footer-mission-text">
-              Qantyrix Tech LLC is an elite technology consultancy specializing in high-performance Data Analysis, scalable Data Engineering, custom AI/ML systems, and proactive Cybersecurity audits.
+              Qantyrix Tech LLC is a premier technology consultancy specializing in high-performance Data Engineering, Agentic AI, Cloud Warehousing (Snowflake, Databricks, BigQuery, AWS), and Enterprise Cybersecurity (ISO 27001, DLP, Zero-Trust).
             </p>
 
             <div className="footer-cert-badges">
               <span className="footer-badge">
-                <ShieldCheck size={13} className="text-orange" /> Google Cloud Certified
+                <ShieldCheck size={13} className="text-blue" /> ISO 27001 Lead Auditor
               </span>
               <span className="footer-badge">
-                <Sparkles size={13} className="text-orange" /> AI 201 Data Science
+                <ShieldCheck size={13} className="text-blue" /> Google Cloud Certified
+              </span>
+              <span className="footer-badge">
+                <Sparkles size={13} className="text-blue" /> AI 201 Data Science
               </span>
             </div>
           </div>
@@ -89,10 +92,11 @@ export default function Footer({ onOpenContact }) {
             <h4 className="footer-col-title">Navigation</h4>
             <ul className="footer-links-list">
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/works">Selected Works</Link></li>
               <li><Link to="/services">Our Services</Link></li>
+              <li><a href="/#industries">Industries We Serve</a></li>
+              <li><a href="/#techstack">Tech Stack & Tooling</a></li>
               <li><Link to="/about">About Qantyrix</Link></li>
-              <li><Link to="/founder">Founder & Leadership</Link></li>
+              <li><Link to="/founder">Leadership & Co-Founders</Link></li>
               <li><Link to="/why-us">Why Choose Us</Link></li>
               <li><Link to="/contact">Get in Touch</Link></li>
             </ul>
@@ -102,40 +106,47 @@ export default function Footer({ onOpenContact }) {
           <div className="footer-col">
             <h4 className="footer-col-title">Practice Areas</h4>
             <ul className="footer-links-list">
-              <li><Link to="/services">Data Analysis & BI</Link></li>
-              <li><Link to="/services">Data Engineering & NiFi</Link></li>
-              <li><Link to="/services">Snowflake & BigQuery Warehousing</Link></li>
-              <li><Link to="/services">AI / ML Engineering & NLP</Link></li>
-              <li><Link to="/services">Enterprise Cybersecurity</Link></li>
-              <li><Link to="/services">Cloud SQL & Query Tuning</Link></li>
+              <li><Link to="/services">Data Engineering & Pipelines</Link></li>
+              <li><Link to="/services">Agentic AI & LangGraph / GenAI</Link></li>
+              <li><Link to="/services">Snowflake & Databricks Warehousing</Link></li>
+              <li><Link to="/services">Financial Planning & Analysis (FP&A)</Link></li>
+              <li><Link to="/services">Enterprise Cybersecurity & ISO 27001</Link></li>
+              <li><Link to="/services">Prompt Engineering & NLP</Link></li>
             </ul>
           </div>
 
           {/* Column 4: Contact & Newsletter */}
           <div className="footer-col">
-            <h4 className="footer-col-title">Direct Contact</h4>
+            <h4 className="footer-col-title">Direct Leadership Contact</h4>
             <div className="footer-contact-items">
-              <a href="mailto:akshdashandilya@gmail.com" className="f-contact-link">
-                <Mail size={15} className="text-orange" />
-                <span>akshdashandilya@gmail.com</span>
-              </a>
-              <a href="tel:+19733702024" className="f-contact-link">
-                <Phone size={15} className="text-orange" />
-                <span>+1 (973) 370-2024</span>
-              </a>
-              <div className="f-contact-link">
-                <MapPin size={15} className="text-orange" />
-                <span>New York City Metropolitan Area</span>
+              <div className="footer-founder-contact-card">
+                <span className="contact-founder-label">Data & AI Architecture:</span>
+                <a href="mailto:akshdashandilya@gmail.com" className="f-contact-link">
+                  <Mail size={14} className="text-blue" />
+                  <span>akshdashandilya@gmail.com</span>
+                </a>
+                <a href="tel:+19733702024" className="f-contact-link">
+                  <Phone size={14} className="text-blue" />
+                  <span>+1 (973) 370-2024</span>
+                </a>
               </div>
-              <a 
-                href="https://www.linkedin.com/in/akshda" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="f-contact-link"
-              >
-                <LinkedinIcon size={15} className="text-orange" />
-                <span>LinkedIn / in / akshda</span>
-              </a>
+
+              <div className="footer-founder-contact-card">
+                <span className="contact-founder-label">Cybersecurity & Programs:</span>
+                <a href="mailto:gaurav@trehans.us" className="f-contact-link">
+                  <Mail size={14} className="text-blue" />
+                  <span>gaurav@trehans.us</span>
+                </a>
+                <a href="tel:+14133888789" className="f-contact-link">
+                  <Phone size={14} className="text-blue" />
+                  <span>+1 (413) 388-8789</span>
+                </a>
+              </div>
+
+              <div className="f-contact-link">
+                <MapPin size={14} className="text-blue" />
+                <span>NYC Metropolitan Area & Springfield, MA</span>
+              </div>
             </div>
 
             {/* Newsletter */}

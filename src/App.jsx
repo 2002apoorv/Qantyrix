@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import ScrollToTop from './components/ScrollToTop';
 
 import HomePage from './pages/HomePage';
-import WorksPage from './pages/WorksPage';
 import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import FounderPage from './pages/FounderPage';
@@ -32,7 +31,7 @@ export default function App() {
         <main className="main-content-flow">
           <Routes>
             <Route path="/" element={<HomePage onOpenContact={openContact} />} />
-            <Route path="/works" element={<WorksPage onOpenContact={openContact} />} />
+            <Route path="/works" element={<Navigate to="/" replace />} />
             <Route path="/services" element={<ServicesPage onOpenContact={openContact} />} />
             <Route path="/about" element={<AboutPage onOpenContact={openContact} />} />
             <Route path="/founder" element={<FounderPage onOpenContact={openContact} />} />

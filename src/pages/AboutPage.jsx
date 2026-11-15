@@ -77,10 +77,10 @@ export default function AboutPage({ onOpenContact }) {
             </div>
             <div className="story-right">
               <p className="story-lead-p">
-                Too often, organizations struggle with data initiatives that stall out in experimental notebooks or suffer from crashing pipelines, bloated cloud warehouse bills, and fragmented reporting.
+                Too often, organizations struggle with data initiatives that stall out in experimental notebooks or suffer from crashing pipelines, bloated cloud warehouse bills, and security compliance vulnerabilities.
               </p>
               <p className="story-body-p">
-                Qantyrix Tech LLC was established to solve this exact problem. Led by senior data architect Akshda Shandilya, our consultancy combines rigorous analytical methodology with resilient software engineering standards. We turn convoluted data landscapes across Snowflake, BigQuery, AWS, and Azure into high-velocity engines for growth.
+                Qantyrix Tech LLC was established to solve this exact problem. Led by co-founders Akshda Shandilya (Lead Data Architect & AI Engineer) and Gaurav Trehan (Head of Cybersecurity Programs & ISO 27001 Lead Auditor), our consultancy combines rigorous analytical methodology with enterprise cybersecurity standards. We turn convoluted data landscapes across Snowflake, Databricks, BigQuery, and AWS into high-velocity, cyber-hardened engines for growth.
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function AboutPage({ onOpenContact }) {
                 return (
                   <div key={idx} className="value-item-card">
                     <div className="value-icon-box">
-                      <Icon size={22} className="text-orange" />
+                      <Icon size={22} className="text-blue" />
                     </div>
                     <h3 className="value-title">{v.title}</h3>
                     <p className="value-desc">{v.desc}</p>
@@ -120,25 +120,25 @@ export default function AboutPage({ onOpenContact }) {
             </div>
           </div>
 
-          {/* Founder Teaser */}
+          {/* Founders Teaser */}
           <div className="about-founder-teaser-card">
             <div className="founder-teaser-left">
               <span className="teaser-pill">Principal Leadership</span>
-              <h3 className="founder-teaser-name">Meet Founder Akshda Shandilya</h3>
+              <h3 className="founder-teaser-name">Meet Co-Founders Akshda Shandilya & Gaurav Trehan</h3>
               <p className="founder-teaser-desc">
-                With a Master’s degree in Business Analytics & Data Science and industry certifications across Google Cloud, AI 201 Data Science, and Power BI, Akshda personally directs every client architecture.
+                Akshda (Master’s in Business Analytics & Data Science, Google Cloud certified) directs high-concurrency data architectures and AI models. Gaurav (10+ years leading enterprise cybersecurity at Columbia Bank, EY, Boston Globe, and IBM; ISO 27001 Lead Auditor) directs risk, compliance, and large-scale program delivery.
               </p>
               <Link to="/founder" className="btn-read-founder">
-                <span>View Full Profile & Credentials</span>
+                <span>View Full Leadership Profiles & Credentials</span>
                 <ArrowRight size={16} />
               </Link>
             </div>
             <div className="founder-teaser-right">
               <div className="founder-quote-box">
                 <p className="founder-quote-text">
-                  “Data without engineering discipline is noise. Our mission at Qantyrix Tech LLC is to build data platforms so dependable and fast that leadership teams never have to second-guess their numbers.”
+                  “Data intelligence and cybersecurity are two sides of the same coin. At Qantyrix Tech LLC, we build platforms so fast, scalable, and hardened that leadership never has to choose between innovation and security.”
                 </p>
-                <span className="quote-author">— Akshda Shandilya, Founder</span>
+                <span className="quote-author">— Akshda Shandilya & Gaurav Trehan, Co-Founders</span>
               </div>
             </div>
           </div>

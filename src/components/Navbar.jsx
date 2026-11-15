@@ -21,10 +21,10 @@ export default function Navbar({ onOpenContact }) {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Works', path: '/works' },
     { name: 'Services', path: '/services' },
+    { name: 'Industries', path: '/#industries' },
     { name: 'About Us', path: '/about' },
-    { name: 'Founder', path: '/founder' },
+    { name: 'Founders', path: '/founder' },
     { name: 'Why Us', path: '/why-us' },
   ];
 

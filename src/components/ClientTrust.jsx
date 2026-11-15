@@ -7,26 +7,28 @@ import {
   BarChart3, 
   ShieldCheck, 
   Server,
-  Zap
+  Zap,
+  Sparkles,
+  BrainCircuit
 } from 'lucide-react';
 
 export default function ClientTrust() {
   const techLogos = [
-    { name: 'Snowflake', icon: Layers, desc: 'Data Cloud & Warehousing' },
-    { name: 'Google Cloud', icon: Cloud, desc: 'BigQuery & AI Platform' },
-    { name: 'AWS Redshift', icon: Database, desc: 'Cloud Data Warehouse' },
-    { name: 'Databricks', icon: Cpu, desc: 'Unified Analytics Engine' },
-    { name: 'Apache NiFi', icon: Server, desc: 'Real-time ETL Pipelines' },
-    { name: 'Tableau & Power BI', icon: BarChart3, desc: 'Enterprise BI Intelligence' },
-    { name: 'Azure Synapse', icon: Zap, desc: 'End-to-End Analytics' },
-    { name: 'SOC2 & HIPAA', icon: ShieldCheck, desc: 'Enterprise Security' },
+    { name: 'Snowflake', icon: Layers, desc: 'Cloud Data Warehouse' },
+    { name: 'Databricks', icon: Cpu, desc: 'Unified Data & AI' },
+    { name: 'AWS & Redshift', icon: Database, desc: 'Cloud Architecture' },
+    { name: 'Google Cloud & BigQuery', icon: Cloud, desc: 'Petabyte Analytics' },
+    { name: 'LangGraph & GenAI', icon: BrainCircuit, desc: 'Agentic Workflows' },
+    { name: 'Tableau & Power BI', icon: BarChart3, desc: 'FP&A & Executive BI' },
+    { name: 'Apache NiFi & Glue', icon: Server, desc: 'Real-time Pipelines' },
+    { name: 'ISO 27001 & SOC2', icon: ShieldCheck, desc: 'Audited Cybersecurity' }
   ];
 
   return (
     <section className="client-trust-section">
       <div className="client-trust-container">
         <p className="trust-intro-text">
-          TRUSTED TECH STACK & PRODUCTION-PROVEN CLOUD ECOSYSTEMS
+          PRODUCTION-PROVEN ENTERPRISE STACK & MULTI-CLOUD ECOSYSTEMS
         </p>
         
         <div className="trust-logos-grid">
@@ -35,7 +37,7 @@ export default function ClientTrust() {
             return (
               <div key={idx} className="trust-logo-item">
                 <div className="logo-icon-box">
-                  <Icon size={18} className="trust-icon" />
+                  <Icon size={18} className="trust-icon text-blue" />
                 </div>
                 <div className="trust-meta">
                   <span className="trust-name">{item.name}</span>

@@ -19,21 +19,21 @@ export default function ServicesSection({ onOpenContact }) {
   const servicesData = [
     {
       id: 'data-analysis',
-      title: 'Data Analysis & BI',
-      tabName: 'Data Analysis & Executive BI',
+      title: 'Data Analysis & FP&A',
+      tabName: 'Data Analysis & Financial Planning (FP&A)',
       icon: BarChart3,
-      tagline: '24/7 Critical reporting resolution, executive dashboards, and statistical modeling with guaranteed SLAs.',
-      description: 'We extract, explore, model, and visualize enterprise datasets across multiple sources to transform complex numbers into executive-level decision making.',
+      tagline: 'Executive dashboards, automated FP&A financial modeling, and statistical analytics with guaranteed SLAs.',
+      description: 'We extract, explore, model, and visualize enterprise datasets across multiple sources to transform complex numbers and financial silos into executive-level decision making.',
       bullets: [
         'Multi-source dashboard architecture across Tableau, Power BI, and QuickSight',
+        'Financial Planning & Analysis (FP&A), automated P&L reconciliations & variance models',
         'Senior data professionals only (Google Data Analytics & AI certified)',
         'Root-cause metric anomalies and automated threshold alerting',
-        'Advanced financial, healthcare, and operational analytics pipelines',
-        'Statistical modeling, time series analysis, and automated reports',
-        'Comprehensive documentation and data dictionaries for team handoff'
+        'Statistical modeling, time series analysis, and automated board reports',
+        'Comprehensive data dictionaries and KPI playbooks for team handoff'
       ],
       previewType: 'chart',
-      previewTitle: 'Executive BI & Reporting',
+      previewTitle: 'Executive BI & FP&A Reporting',
       chartCurve: 'M0,80 Q50,90 100,45 T200,60 T300,25 T400,15',
       metricLabel: 'Report Latency',
       metricVal: '< 1.2s',
@@ -41,21 +41,21 @@ export default function ServicesSection({ onOpenContact }) {
     },
     {
       id: 'data-engineering',
-      title: 'Data Engineering & Pipelines',
-      tabName: 'Data Engineering & Pipelines',
+      title: 'Data Engineering & Cloud Warehousing',
+      tabName: 'Data Engineering & Warehousing',
       icon: Database,
-      tagline: 'High-throughput ETL/ELT pipelines, streaming architectures, and cloud data warehousing.',
-      description: 'Architecting scalable pipelines using Snowflake, AWS RedShift, Google BigQuery, and Azure Synapse. Automated extraction using Apache NiFi, AWS Glue, SSIS, and Python.',
+      tagline: 'High-throughput ETL/ELT pipelines, streaming architectures, and multi-cloud data warehousing.',
+      description: 'Architecting scalable pipelines using Snowflake, Databricks, AWS Redshift, and Google BigQuery. Automated extraction using Apache NiFi, AWS Glue, dbt, and Python.',
       bullets: [
         'Resilient ETL/ELT pipeline design handling millions of events per hour',
-        'Cross-cloud data warehousing (Snowflake, BigQuery, Redshift, Azure Synapse)',
+        'Cross-cloud data warehousing (Snowflake, Databricks, BigQuery, AWS Redshift)',
         'High-performance SQL query tuning & indexing for RDBMS and cloud warehouses',
         'Web scraping and unstructured data ingestion (Beautiful Soup, Scrapy, APIs)',
         'Zero-data-loss streaming architectures with real-time health monitoring',
-        'CI/CD deployment for data schemas and transformations'
+        'Modular dbt data transformations and automated schema testing'
       ],
       previewType: 'pipeline',
-      previewTitle: 'NiFi / Snowflake Ingestion',
+      previewTitle: 'NiFi / Snowflake / Databricks',
       chartCurve: 'M0,70 Q70,40 140,65 T280,30 T400,10',
       metricLabel: 'Throughput',
       metricVal: '28.5k evt/s',
@@ -63,21 +63,21 @@ export default function ServicesSection({ onOpenContact }) {
     },
     {
       id: 'ai-ml',
-      title: 'AI / ML Engineering',
-      tabName: 'AI / ML Engineering & NLP',
+      title: 'Agentic AI & GenAI',
+      tabName: 'Agentic AI, GenAI & NLP',
       icon: BrainCircuit,
-      tagline: 'Production-grade Machine Learning, Deep Learning, NLP, and predictive automation.',
-      description: 'Developing and deploying custom ML/DL models with Python and R. From Natural Language Processing to predictive time series, we integrate intelligence directly into your workflows.',
+      tagline: 'Autonomous multi-agent workflows, LangGraph orchestration, GenAI, and custom NLP.',
+      description: 'Developing and deploying custom Agentic AI and Generative AI pipelines with LangGraph, LangChain, Hugging Face, TensorFlow, and PyTorch directly into your operations.',
       bullets: [
-        'End-to-end model training, hyperparameter tuning, and containerized deployment',
-        'NLP for sentiment analysis, document parsing, and classification pipelines',
-        'Time series forecasting for demand prediction, financial trends, and risk',
+        'Agentic AI multi-agent workflows and cyclic orchestration with LangGraph',
+        'Prompt engineering, tokenization optimization, and domain fine-tuning',
+        'Enterprise LLM integrations, retrieval-augmented generation (RAG) & vector stores',
         'Certified AI Professionals (GL Certified AI Professional - Data Science)',
         'High-concurrency inference endpoints with sub-25ms response latency',
         'Continuous model drift detection and automated retraining routines'
       ],
       previewType: 'ai',
-      previewTitle: 'Predictive Inference Engine',
+      previewTitle: 'LangGraph Multi-Agent Engine',
       chartCurve: 'M0,85 Q60,60 120,70 T240,35 T320,15 T400,5',
       metricLabel: 'Inference Latency',
       metricVal: '14ms',
@@ -85,21 +85,21 @@ export default function ServicesSection({ onOpenContact }) {
     },
     {
       id: 'cybersecurity',
-      title: 'Cybersecurity & Audits',
-      tabName: 'Cybersecurity & Compliance',
+      title: 'Cybersecurity & ISO 27001',
+      tabName: 'Cybersecurity & ISO 27001 Audits',
       icon: ShieldCheck,
-      tagline: 'Comprehensive security assessments, data governance, and vulnerability hardening.',
-      description: 'Securing mission-critical data assets, cloud databases, and API gateways against modern threat vectors with proactive threat auditing and SOC2 / HIPAA readiness.',
+      tagline: 'ISO 27001 Lead Auditor leadership, DLP for 500k+ users, zero-trust, and GDPR/CCPA governance.',
+      description: 'Led by enterprise cybersecurity leaders from Columbia Bank, EY, and IBM, we secure mission-critical data assets, cloud databases, and enforce ISO 27001 compliance standards.',
       bullets: [
-        'Zero-trust database architecture and RBAC access governance',
+        'ISO 27001 Lead Auditor assessments and ISMS implementation roadmap',
+        'Global Data Loss Prevention (DLP) programs protecting 500K+ enterprise users',
+        'Zero-trust database architecture, NIST framework alignment, and IAM RBAC',
         'Cloud security audits for AWS, Google Cloud, and Azure environments',
-        'Data-at-rest and data-in-transit encryption (AES-256, TLS 1.3)',
-        'Vulnerability scanning, automated patch monitoring, and penetration testing',
-        'Compliance alignment for HIPAA, SOC2 Type II, and GDPR standards',
+        'Compliance alignment for HIPAA, SOC2 Type II, GDPR, and CCPA standards',
         '24/7 Threat monitoring and rapid incident mitigation safety net'
       ],
       previewType: 'security',
-      previewTitle: 'Threat Audit & Zero Trust',
+      previewTitle: 'ISO 27001 & Threat Shield',
       chartCurve: 'M0,90 Q80,70 160,50 T300,30 T400,15',
       metricLabel: 'Security Score',
       metricVal: '100 / 100',
@@ -108,10 +108,10 @@ export default function ServicesSection({ onOpenContact }) {
     {
       id: 'modernization',
       title: 'Cloud & Warehouse Modernization',
-      tabName: 'Cloud Modernization & Tuning',
+      tabName: 'Multi-Cloud Modernization & Tuning',
       icon: Server,
-      tagline: 'Legacy database migration, cloud optimization, and severe query speedups.',
-      description: 'Upgrading legacy on-prem and sluggish relational databases to modern cloud-native architectures without downtime or data corruption.',
+      tagline: 'Legacy database migration, Snowflake/Databricks tuning, and severe query speedups.',
+      description: 'Upgrading legacy on-prem and sluggish relational databases to modern cloud-native architectures across AWS, GCP, Databricks, and Snowflake without downtime.',
       bullets: [
         'Legacy RDBMS modernization to Google Cloud SQL, Amazon RDS, or Snowflake',
         'Deep SQL query refactoring reducing cloud compute bills by up to 50%',
@@ -121,7 +121,7 @@ export default function ServicesSection({ onOpenContact }) {
         'Continuous performance benchmarking under peak transaction loads'
       ],
       previewType: 'cloud',
-      previewTitle: 'Warehouse Compute Optimization',
+      previewTitle: 'Multi-Cloud Compute Tuning',
       chartCurve: 'M0,75 Q90,80 180,40 T300,20 T400,8',
       metricLabel: 'Cost Reduction',
       metricVal: '-46% Bills',
@@ -215,8 +215,8 @@ export default function ServicesSection({ onOpenContact }) {
                   <svg viewBox="0 0 400 130" className="preview-svg-line">
                     <defs>
                       <linearGradient id={`grad-${current.id}`} x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#ff5722" stopOpacity="0.4" />
-                        <stop offset="100%" stopColor="#ff5722" stopOpacity="0.0" />
+                        <stop offset="0%" stopColor="#1d68bd" stopOpacity="0.4" />
+                        <stop offset="100%" stopColor="#1d68bd" stopOpacity="0.0" />
                       </linearGradient>
                     </defs>
                     <path
@@ -226,7 +226,7 @@ export default function ServicesSection({ onOpenContact }) {
                     <path
                       d={current.chartCurve}
                       fill="none"
-                      stroke="#ff5722"
+                      stroke="#1d68bd"
                       strokeWidth="3.5"
                       strokeLinecap="round"
                     />

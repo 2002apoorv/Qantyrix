@@ -1,33 +1,45 @@
 :root {
-  --primary-orange: #ff5722;
-  --primary-orange-hover: #e64a19;
-  --primary-orange-light: #fff2ed;
-  --primary-orange-glow: rgba(255, 87, 34, 0.35);
-  --primary-orange-gradient: linear-gradient(135deg, #ff6b35 0%, #ff4500 100%);
+  /* Blues Theme Palette */
+  --primary-blue: #1d68bd;
+  --primary-blue-hover: #155096;
+  --primary-blue-light: #eff6ff;
+  --primary-blue-glow: rgba(29, 104, 189, 0.35);
+  --primary-blue-gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --primary-blue-deep: #0f3d75;
+  
+  /* Primary references aliased to Blue */
+  --primary-color: #1d68bd;
+  --primary-orange: #1d68bd;
+  --primary-orange-hover: #155096;
+  --primary-orange-light: #eff6ff;
+  --primary-orange-glow: rgba(29, 104, 189, 0.35);
+  --primary-orange-gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   
   --bg-page: #ffffff;
-  --bg-surface: #f9fafb;
+  --bg-surface: #f8fafc;
   --bg-card: #ffffff;
-  --bg-dark: #0f172a;
+  --bg-dark: #0a1120;
   
-  --text-dark: #0f172a;
-  --text-secondary: #475569;
+  --text-dark: #0a1120;
+  --text-secondary: #334155;
   --text-muted: #64748b;
   --text-light: #f8fafc;
   
   --border-subtle: #e2e8f0;
   --border-card: #eef2f6;
-  --border-focus: #ff5722;
+  --border-focus: #1d68bd;
   
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
   --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-  --shadow-card: 0 14px 34px rgba(15, 23, 42, 0.06);
-  --shadow-orange: 0 10px 25px -3px rgba(255, 87, 34, 0.35);
+  --shadow-card: 0 14px 34px rgba(10, 17, 32, 0.06);
+  --shadow-orange: 0 10px 25px -3px rgba(29, 104, 189, 0.35);
+  --shadow-blue: 0 10px 25px -3px rgba(29, 104, 189, 0.35);
   
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+  /* Font Family: Arial / Calibri */
+  --font-sans: 'Calibri', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Calibri', 'Arial', sans-serif;
 }
 
 *, *::before, *::after {
@@ -97,6 +109,6 @@ img, svg {
 
 /* Selection */
 ::selection {
-  background-color: #ff5722;
+  background-color: #1d68bd;
   color: #ffffff;
 }

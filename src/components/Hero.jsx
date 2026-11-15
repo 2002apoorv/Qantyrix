@@ -190,8 +190,8 @@ export default function Hero({ onOpenContact }) {
               <svg viewBox="0 0 400 120" className="bi-svg-chart">
                 <defs>
                   <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#ff5722" stopOpacity="0.35" />
-                    <stop offset="100%" stopColor="#ff5722" stopOpacity="0.0" />
+                    <stop offset="0%" stopColor="#1d68bd" stopOpacity="0.35" />
+                    <stop offset="100%" stopColor="#1d68bd" stopOpacity="0.0" />
                   </linearGradient>
                 </defs>
                 <path 
@@ -201,12 +201,12 @@ export default function Hero({ onOpenContact }) {
                 <path 
                   d="M0,90 Q50,75 100,50 T200,45 T300,20 T400,10" 
                   fill="none" 
-                  stroke="#ff5722" 
+                  stroke="#1d68bd" 
                   strokeWidth="3.5"
                   strokeLinecap="round" 
                 />
-                <circle cx="300" cy="20" r="5" fill="#ff5722" stroke="#ffffff" strokeWidth="2" />
-                <circle cx="400" cy="10" r="5" fill="#ff5722" stroke="#ffffff" strokeWidth="2" />
+                <circle cx="300" cy="20" r="5" fill="#1d68bd" stroke="#ffffff" strokeWidth="2" />
+                <circle cx="400" cy="10" r="5" fill="#1d68bd" stroke="#ffffff" strokeWidth="2" />
               </svg>
             </div>
             

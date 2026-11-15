@@ -21,86 +21,86 @@ export default function ServicesPage({ onOpenContact }) {
       id: 'data-analysis',
       icon: BarChart3,
       tag: 'Service 01',
-      title: 'Data Analysis & Executive BI',
-      tagline: 'Transforming unstructured datasets and operational silos into crystal-clear executive decision engines.',
-      description: 'We specialize in end-to-end data extraction, exploration, statistical modeling, and interactive visualization. Whether you need financial performance monitoring, patient outcomes in healthcare analytics, or marketing ROI, we deliver robust dashboards that load in sub-seconds.',
+      title: 'Data Analysis & Financial Planning (FP&A)',
+      tagline: 'Transforming unstructured datasets and financial silos into high-conviction executive decision engines.',
+      description: 'We specialize in end-to-end data extraction, exploration, statistical modeling, interactive visualization, and corporate Financial Planning & Analysis (FP&A). Whether you need cash-flow forecasting, patient outcomes in healthcare analytics, or marketing ROI, we deliver robust dashboards that load in sub-seconds.',
       capabilities: [
         'Interactive dashboards in Tableau, Power BI, and AWS QuickSight',
+        'Financial Planning & Analysis (FP&A), automated P&L reconciliations & variance models',
         'Statistical analysis, hypothesis testing, and time series forecasting',
-        'Financial analytics, P&L reporting, and cost-anomaly detection',
         'Healthcare analytics, clinical workflows, and patient data modeling',
         'Automated executive email digests and real-time metric threshold alerts',
         'Comprehensive data dictionaries, KPI definitions, and staff training'
       ],
-      techStack: ['Tableau', 'Power BI', 'AWS QuickSight', 'Python', 'R', 'SQL', 'QlikView']
+      techStack: ['FP&A Modeling', 'Tableau', 'Power BI', 'AWS QuickSight', 'Python', 'R', 'Advanced SQL', 'QlikView']
     },
     {
       id: 'data-engineering',
       icon: Database,
       tag: 'Service 02',
-      title: 'Data Engineering & Cloud Pipelines',
+      title: 'Data Engineering & Cloud Warehousing',
       tagline: 'High-throughput, fault-tolerant data pipelines that eliminate bottlenecks and scale effortlessly.',
-      description: 'We design and construct resilient ETL/ELT pipelines capable of ingesting millions of structured and unstructured records per hour. From Apache NiFi real-time stream processing to AWS Glue and custom Python workers, we turn raw streams into pristine data lakes and warehouses.',
+      description: 'We design and construct resilient ETL/ELT pipelines capable of ingesting millions of structured and unstructured records per hour. From Apache NiFi real-time stream processing to AWS Glue, Databricks, and Snowflake, we turn raw streams into pristine data lakes and warehouses.',
       capabilities: [
         'Multi-source ETL/ELT pipeline architecture with Apache NiFi, AWS Glue & SSIS',
-        'Cloud data warehousing on Snowflake, AWS RedShift, Google BigQuery & Azure Synapse',
+        'Cloud data warehousing on Snowflake, Databricks, AWS Redshift & Google BigQuery',
         'Automated web scraping and API ingestion using Beautiful Soup, Scrapy & custom workers',
-        'Schema evolution, data deduplication, and automated data quality validation',
+        'Schema evolution, data deduplication, and automated data quality validation (dbt)',
         'High-concurrency streaming pipelines with zero packet loss guarantees',
         'Disaster recovery, point-in-time rollback, and multi-region failover'
       ],
-      techStack: ['Snowflake', 'Apache NiFi', 'AWS Glue', 'Google BigQuery', 'Azure Synapse', 'Python', 'SSIS']
+      techStack: ['Snowflake', 'Databricks', 'Google BigQuery', 'AWS Redshift', 'Apache NiFi', 'AWS Glue', 'dbt', 'Python']
     },
     {
       id: 'ai-ml',
       icon: BrainCircuit,
       tag: 'Service 03',
-      title: 'AI / ML Engineering & Deep Learning',
-      tagline: 'Production-ready artificial intelligence models that deliver high-conviction predictions.',
-      description: 'We take machine learning beyond theoretical Jupyter notebooks into containerized, low-latency production APIs. Backed by certified AI professionals, we engineer Deep Learning models, Natural Language Processing systems, and predictive time series algorithms that integrate seamlessly with your core apps.',
+      title: 'Agentic AI, GenAI & NLP Engineering',
+      tagline: 'Production-ready Generative AI, LangGraph multi-agent workflows, and predictive models.',
+      description: 'We engineer cutting-edge Agentic AI and Generative AI systems directly integrated into enterprise processes. Leveraging LangGraph, LangChain, Hugging Face, TensorFlow, and PyTorch, we build custom LLM agents, prompt engineering routines, and vector retrieval pipelines.',
       capabilities: [
-        'Custom Natural Language Processing (NLP) for document parsing, sentiment, and categorization',
-        'Predictive modeling for customer churn, demand forecasting, and credit risk',
-        'Deep learning computer vision and anomaly detection on high-frequency data streams',
-        'Containerized model deployment via Docker, FastAPI, and Kubernetes endpoints',
-        'Automated retraining pipelines with MLflow and continuous model drift tracking',
-        'Enterprise LLM integrations, retrieval-augmented generation (RAG), and vector stores'
+        'Agentic AI multi-agent workflows and cyclic orchestration with LangGraph',
+        'Custom Generative AI (GenAI), enterprise LLMs, and RAG architectures',
+        'Prompt engineering, tokenization optimization, and fine-tuning (LoRA/QLoRA)',
+        'Natural Language Processing (NLP) for document parsing, sentiment, and categorization',
+        'Predictive modeling with TensorFlow & PyTorch for demand and risk forecasting',
+        'Vector databases (Pinecone, ChromaDB, Weaviate) with sub-25ms semantic search'
       ],
-      techStack: ['PyTorch', 'TensorFlow', 'Scikit-Learn', 'HuggingFace', 'Docker', 'FastAPI', 'MLflow']
+      techStack: ['Agentic AI', 'LangGraph', 'LangChain', 'GenAI', 'Hugging Face', 'TensorFlow', 'PyTorch', 'Prompt Engineering', 'Tokenization']
     },
     {
       id: 'cybersecurity',
       icon: ShieldCheck,
       tag: 'Service 04',
-      title: 'Cybersecurity & Compliance Audits',
-      tagline: 'Proactive vulnerability assessments, data lake hardening, and regulatory compliance.',
-      description: 'Your data is your most valuable asset—and your highest liability if compromised. Qantyrix Tech LLC conducts rigorous security audits across cloud environments, enforces zero-trust access controls, and hardens databases against ransomware, unauthorized exfiltration, and compliance penalties.',
+      title: 'Cybersecurity, ISO 27001 & Compliance Audits',
+      tagline: 'Proactive vulnerability assessments, data lake hardening, and regulatory governance.',
+      description: 'Led by enterprise cybersecurity program leaders with over a decade of experience across Columbia Bank, EY, and IBM, Qantyrix conducts ISO 27001 audits, enforces zero-trust access controls, deploys DLP for 500k+ users, and hardens cloud databases against modern threat vectors.',
       capabilities: [
+        'Enterprise ISO 27001 Lead Auditor assessments and ISMS implementation',
+        'Global Data Loss Prevention (DLP) programs protecting enterprise assets',
         'Cloud security architecture reviews for AWS, Google Cloud, and Azure infrastructures',
-        'Zero-trust database access policies and automated IAM role-pruning',
-        'End-to-end encryption protocols (AES-256 for data at rest, TLS 1.3 in transit)',
-        'Vulnerability assessments, automated penetration tests, and patch monitoring',
-        'SOC2 Type II, HIPAA, and GDPR technical compliance readiness',
-        '24/7 Security incident triage and automated anomaly intrusion detection'
+        'Zero-trust database access policies and automated IAM least-privilege RBAC',
+        'NIST incident response alignment, penetration test mitigation, and threat modeling',
+        'SOC2 Type II, HIPAA, GDPR, and CCPA regulatory compliance readiness'
       ],
-      techStack: ['Zero-Trust', 'AES-256', 'AWS GuardDuty', 'CloudTrail', 'IAM RBAC', 'WAF', 'SOC2 / HIPAA']
+      techStack: ['ISO 27001', 'DLP (500k+ Users)', 'NIST Framework', 'Zero-Trust', 'GDPR / CCPA', 'AES-256', 'SOC2 / HIPAA']
     },
     {
       id: 'cloud-modernization',
       icon: Server,
       tag: 'Service 05',
-      title: 'Cloud Warehouse Modernization & Query Tuning',
+      title: 'Multi-Cloud Modernization & Query Tuning',
       tagline: 'Eliminating sluggish queries and slashing bloated cloud warehouse bills by up to 50%.',
-      description: 'Are your cloud databases grinding to a halt during peak hours? We refactor slow SQL queries, optimize clustering keys and partitioning schemes, and migrate legacy on-prem databases (MySQL, SQL Server) to modern cloud engines without operational downtime.',
+      description: 'Are your cloud databases grinding to a halt during peak hours? We refactor slow SQL queries, optimize clustering keys and micro-partitioning across Snowflake, Databricks, BigQuery, and RDS without operational downtime.',
       capabilities: [
         'Deep SQL query refactoring and index optimization across relational and cloud DBMS',
         'Warehouse compute sizing, auto-suspend policies, and cost-governance controls',
-        'Seamless database migrations to Amazon RDS, Google Cloud SQL, and Snowflake',
+        'Seamless database migrations to Amazon RDS, Google Cloud SQL, Databricks, and Snowflake',
         'Materialized view architectures and caching layers to minimize compute cycles',
         'Continuous performance benchmarking under simulated peak stress loads',
         'Full architectural handoff with comprehensive documentation and playbooks'
       ],
-      techStack: ['Google Cloud SQL', 'Amazon RDS', 'Snowflake Tuning', 'MySQL', 'SQL Server', 'PostgreSQL']
+      techStack: ['AWS', 'GCP', 'Databricks', 'Snowflake', 'Amazon RDS', 'Google Cloud SQL', 'PostgreSQL']
     }
   ];
 

@@ -62,7 +62,7 @@ export default function ContactPage() {
             <span className="hero-serif-italic">extraordinary together</span>
           </h1>
           <p className="page-hero-subtitle">
-            Connect directly with Akshda Shandilya and our lead engineering team. 
+            Connect directly with Akshda Shandilya (Data & AI Architect) and Gaurav Trehan (Cybersecurity & Programs Leader). 
             We provide free 45-minute technical discovery and scoping sessions.
           </p>
         </div>
@@ -75,57 +75,84 @@ export default function ContactPage() {
             {/* Left Column: Direct Founder Contacts & Guarantees */}
             <div className="contact-left-details">
               <div className="contact-info-card">
-                <span className="card-kicker">Direct Contact Channels</span>
-                <h2 className="card-headline">Reach Akshda Shandilya</h2>
+                <span className="card-kicker">Direct Leadership Channels</span>
+                <h2 className="card-headline">Reach Our Co-Founders</h2>
                 <p className="card-subtext">
-                  Skip the middleman and sales reps. Speak directly with the principal data and AI architect who designs your system.
+                  Skip the middleman and sales reps. Speak directly with the principal architects who design and safeguard your systems.
                 </p>
 
-                <div className="direct-channels-stack">
-                  <a href="mailto:akshdashandilya@gmail.com" className="direct-channel-item">
-                    <div className="channel-icon-circle">
-                      <Mail size={18} className="text-orange" />
-                    </div>
-                    <div>
-                      <span className="channel-label">Email Directly</span>
-                      <strong className="channel-value">akshdashandilya@gmail.com</strong>
-                    </div>
-                  </a>
+                {/* Akshda contact card */}
+                <div className="founder-contact-subcard">
+                  <span className="subcard-role-badge">Data & AI Architecture</span>
+                  <h4 className="subcard-name">Akshda Shandilya</h4>
+                  <div className="direct-channels-stack">
+                    <a href="mailto:akshdashandilya@gmail.com" className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <Mail size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Email Directly</span>
+                        <strong className="channel-value">akshdashandilya@gmail.com</strong>
+                      </div>
+                    </a>
 
-                  <a href="tel:+19733702024" className="direct-channel-item">
-                    <div className="channel-icon-circle">
-                      <Phone size={18} className="text-orange" />
-                    </div>
-                    <div>
-                      <span className="channel-label">Phone & Emergency Line</span>
-                      <strong className="channel-value">+1 (973) 370-2024</strong>
-                    </div>
-                  </a>
+                    <a href="tel:+19733702024" className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <Phone size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Direct Phone</span>
+                        <strong className="channel-value">+1 (973) 370-2024</strong>
+                      </div>
+                    </a>
 
-                  <div className="direct-channel-item">
-                    <div className="channel-icon-circle">
-                      <MapPin size={18} className="text-orange" />
-                    </div>
-                    <div>
-                      <span className="channel-label">Location & Base</span>
-                      <strong className="channel-value">New York City Metropolitan Area</strong>
+                    <div className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <MapPin size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Base</span>
+                        <strong className="channel-value">New York City Metropolitan Area</strong>
+                      </div>
                     </div>
                   </div>
+                </div>
 
-                  <a 
-                    href="https://www.linkedin.com/in/akshda" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="direct-channel-item"
-                  >
-                    <div className="channel-icon-circle">
-                      <LinkedinIcon size={18} className="text-orange" />
+                {/* Gaurav contact card */}
+                <div className="founder-contact-subcard mt-4">
+                  <span className="subcard-role-badge">Cybersecurity & Programs</span>
+                  <h4 className="subcard-name">Gaurav Trehan</h4>
+                  <div className="direct-channels-stack">
+                    <a href="mailto:gaurav@trehans.us" className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <Mail size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Email Directly</span>
+                        <strong className="channel-value">gaurav@trehans.us</strong>
+                      </div>
+                    </a>
+
+                    <a href="tel:+14133888789" className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <Phone size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Direct Phone</span>
+                        <strong className="channel-value">+1 (413) 388-8789</strong>
+                      </div>
+                    </a>
+
+                    <div className="direct-channel-item">
+                      <div className="channel-icon-circle">
+                        <MapPin size={16} className="text-blue" />
+                      </div>
+                      <div>
+                        <span className="channel-label">Base</span>
+                        <strong className="channel-value">Springfield, MA</strong>
+                      </div>
                     </div>
-                    <div>
-                      <span className="channel-label">LinkedIn Network</span>
-                      <strong className="channel-value">linkedin.com/in/akshda</strong>
-                    </div>
-                  </a>
+                  </div>
                 </div>
 
                 <div className="guarantees-box">

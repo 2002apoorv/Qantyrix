@@ -57,7 +57,7 @@ export default function ContactModal({ isOpen, onClose }) {
             </div>
             <h3 className="success-title">Strategy Request Received!</h3>
             <p className="success-desc">
-              Thank you, <strong>{formData.fullName}</strong>. Akshda Shandilya and our lead engineering team will review your requirements for <strong>{formData.service}</strong> and get back to you within 2-4 business hours.
+              Thank you, <strong>{formData.fullName}</strong>. Akshda Shandilya, Gaurav Trehan, and our lead engineering team will review your requirements for <strong>{formData.service}</strong> and get back to you within 2-4 business hours.
             </p>
             <div className="success-details-box">
               <div className="detail-line">
@@ -65,8 +65,8 @@ export default function ContactModal({ isOpen, onClose }) {
                 <strong>{formData.email}</strong>
               </div>
               <div className="detail-line">
-                <span>Direct emergency line:</span>
-                <strong>+1 (973) 370-2024</strong>
+                <span>Direct emergency lines:</span>
+                <strong>(973) 370-2024 / (413) 388-8789</strong>
               </div>
             </div>
             <button 
@@ -83,12 +83,12 @@ export default function ContactModal({ isOpen, onClose }) {
           <div className="modal-form-wrapper">
             <div className="modal-header-info">
               <div className="modal-pill-tag">
-                <Sparkles size={14} className="text-orange" />
+                <Sparkles size={14} className="text-blue" />
                 <span>Qantyrix Tech LLC • Consultation</span>
               </div>
               <h2 className="modal-title">Start Your Project or Schedule a Consultation</h2>
               <p className="modal-sub">
-                Connect directly with <strong>Akshda Shandilya</strong> and senior data architects. We typically respond within 2–4 hours.
+                Connect directly with <strong>Akshda Shandilya</strong> & <strong>Gaurav Trehan</strong>. We typically respond within 2–4 hours.
               </p>
             </div>
 
