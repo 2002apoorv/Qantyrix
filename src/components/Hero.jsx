@@ -212,9 +212,9 @@ export default function Hero({ onOpenContact }) {
 
             <div className="bi-card-footer">
               <span className="status-live-indicator">
-                <span className="ping-dot"></span> Real-time data pipeline active
+                <span className="ping-dot"></span>
               </span>
-              <span className="author-tag">Data & Cybersecurity Verified</span>
+              <span className="author-tag"></span>
             </div>
           </div>
 
